@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fastapi-errors"
+version = "0.1.0"
+description = "Opinionated FastAPI error handling library"
+authors = ["dikuchan <dikuchan@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "fastapi_errors"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+starlette = "^0.36.3"
+
+[tool.poetry.group.dev.dependencies]
+fastapi = "^0.110.0"
+httpx = "^0.27.0"
+mypy = "^1.8.0"
+pre-commit = "^3.5.0"
+pytest = "^8.0.2"
+ruff = "^0.3.0"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
